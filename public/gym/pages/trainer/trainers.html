@@ -1,0 +1,48 @@
+<div class="main">
+    <div class="about_banner_img"><img src="images/trine_img.jpg" class="img-responsive" alt=""></div>
+    <div class="about_banner_wrap">
+        <h1 class="m_11">Timetable</h1>
+    </div>
+    <div class="border"> </div>
+  <div class="container">
+        <div class="about_trainer">
+            <h3 class="m_2">Our Trainers</h3>
+            <div class="row about_box">
+                <div class="col-md-4" ng-repeat="traniner in traniners">
+                    <div class="box1">
+                        <div class="box1_left">
+                            <img ng-src="images/{{traniner.img}}" class="img-responsive" alt="" />
+                            <div class="desc1">
+                                <h3>{{traniner.name}}
+                                </h3>
+
+                                <p><span class="m_text" ng-repeat="class in traniner.class">{{class.className}}<br></span></p>
+                                <div class="coursel_list">
+                                    <i class="a_heart" ng-click="addHeart(traniner)"> </i>{{traniner.votesLove}}
+                                    <br>
+                                    <i class="like1" ng-click="addLike(traniner)"> </i>{{traniner.votesLike}}
+                                </div>
+<!--
+                                <div class="coursel_list1">
+                                    <i class="a_twt"> </i>
+                                    <i class="a_fb"> </i>
+                                </div>
+-->
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="box1_right">
+                            <h4>Description</h4>
+                            <p>{{traniner.description}} </p>
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,188 @@
+<div class="main">
+    <div class="about_banner_img"><img src="images/about_img.jpg" class="img-responsive" alt="" /></div>
+    <div class="about_banner_wrap">
+        <h1 class="m_11">About Us</h1>
+    </div>
+    <div class="about-wrapper">
+        <div class="container">
+            <div class="row about-top">
+                <div class="col-md-5">
+                    <img src="images/about_img1.jpg" class="img-responsive" alt="" />
+                </div>
+                <div class="col-md-7 about-left-text">
+                    <h2>{{gym.GymName}}!</h2>
+                    <p>
+                        {{gym.slogan}}</p>
+                    <h4>{{gym.location}}</h4>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="about_trainer">
+            <h3 class="m_2">Our Trainers</h3>
+            <div class="row about_box">
+                <div class="col-md-4" ng-repeat="traniner in traniners">
+                    <div class="box1">
+                        <div class="box1_left">
+                            <img ng-src="images/{{traniner.img}}" class="img-responsive" alt="" />
+                            <div class="desc1">
+                                <h3>{{traniner.name}}
+                                </h3>
+
+                                <p><span class="m_text" ng-repeat="class in traniner.class">{{class.className}}<br></span></p>
+                                <div class="coursel_list">
+                                    <i class="a_heart" ng-click="addHeart(traniner)"> </i>{{traniner.votesLove}}
+                                    <br>
+                                    <i class="like1" ng-click="addLike(traniner)"> </i>{{traniner.votesLike}}
+                                </div>
+<!--
+                                <div class="coursel_list1">
+                                    <i class="a_twt"> </i>
+                                    <i class="a_fb"> </i>
+                                </div>
+-->
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="box1_right">
+                            <h4>Description</h4>
+                            <p>{{traniner.description}} </p>
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="login">
+        <div class="row login_details">
+            <div class="col-md-6">
+                <div class="join">
+                    <h3>Why Join ?</h3>
+                    <h4>sed diam nonummy nibh euismod</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                        <br> nibh euismod tincidunt ut laoreet dolore magna . </p>
+                    <div class="btn3">
+                        <a href="#">Join Today</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="join-right">
+                    <h3>Why Join ?</h3>
+                    <h4>sed diam nonummy nibh euismod</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                        <br> nibh euismod tincidunt ut laoreet dolore magna . </p>
+                    <div class="buttons_login">
+                        <div class="btn4">
+                            <a href="login.html">Log In</a>
+                        </div>
+                        <div class="p-ww">
+                            <form>
+                                <input class="date" id="datepicker" type="text" value="View Calender" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'View Calender';}">
+                            </form>
+                        </div>
+                        <div class="clear"></div>
+                        <!---strat-date-piker---->
+                        <script src="js/jquery-ui.js"></script>
+                        <script>
+                            $(function () {
+                                $("#datepicker").datepicker();
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="container">
+            <i class="quot"> </i>
+            <p>diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendreri</p>
+            <p class="ceo">quis nostrud, <span class="ceo1">tation - ullamcorper</span></p>
+        </div>
+    </div>
+    <div class="about_gallery">
+        <div class="container">
+            <div class="col-md-8">
+                <h3 class="m_2">Gallery</h3>
+                <div id="ca-container" class="ca-container">
+                    <div class="ca-wrapper">
+                        <div class="ca-item ca-item-1">
+                            <div class="ca-item-main">
+                                <div class="ca-icon"> </div>
+                                <div class="ca-icon1"> </div>
+                            </div>
+                        </div>
+                        <div class="ca-item ca-item-2">
+                            <div class="ca-item-main">
+                                <div class="ca-icon"> </div>
+                                <div class="ca-icon2"> </div>
+                            </div>
+                        </div>
+                        <div class="ca-item ca-item-3">
+                            <div class="ca-item-main">
+                                <div class="ca-icon"> </div>
+                                <div class="ca-icon3"> </div>
+                            </div>
+                        </div>
+                        <div class="ca-item ca-item-4">
+                            <div class="ca-item-main">
+                                <div class="ca-icon"> </div>
+                                <div class="ca-icon4"> </div>
+                            </div>
+                        </div>
+                        <div class="ca-item ca-item-5">
+                            <div class="ca-item-main">
+                                <div class="ca-icon"> </div>
+                                <div class="ca-icon5"> </div>
+                            </div>
+                        </div>
+                        <div class="ca-item ca-item-6">
+                            <div class="ca-item-main">
+                                <div class="ca-icon"> </div>
+                                <div class="ca-icon6"> </div>
+                            </div>
+                        </div>
+                        <div class="ca-item ca-item-7">
+                            <div class="ca-item-main">
+                                <div class="ca-icon"> </div>
+                                <div class="ca-icon7"> </div>
+                            </div>
+                        </div>
+                        <div class="ca-item ca-item-8">
+                            <div class="ca-item-main">
+                                <div class="ca-icon"> </div>
+                                <div class="ca-icon"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $('#ca-container').contentcarousel();
+                </script>
+            </div>
+            <div class="col-md-4">
+                <h3 class="m_2">Partner</h3>
+                <ul class="partner">
+                    <li><img src="images/p6.png" alt="" /></li>
+                    <li><img src="images/p5.png" alt="" /></li>
+                    <li><img src="images/p4.png" alt="" /></li>
+                    <li><img src="images/p3.png" alt="" /></li>
+                    <li><img src="images/p2.png" alt="" /></li>
+                    <li><img src="images/p1.png" alt="" /></li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
